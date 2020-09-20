@@ -52,7 +52,7 @@ Exponentially weighted moving average (EWMA) controller 在工业上广泛使用
 
 
 
-强化学习算法用于错误预测：错误的更新$E_t$
+强化学习算法用于错误预测：错误的更新$E_t=f_t-\hat y_t$
 
 
 # **参考文献**
