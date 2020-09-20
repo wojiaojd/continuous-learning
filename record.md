@@ -33,7 +33,7 @@ hello world!
 * 面向被控对象的环境学习
 * 面向复杂不确定被控对象的学习
 
-## **2020.9.18**
+## **2020.9.18-20**
 ### **智能控制领域的常用算法**
 * 专家系统
 * 遗传算法
@@ -49,6 +49,10 @@ Exponentially weighted moving average (EWMA) controller 在工业上广泛使用
 
 
 本文使用的方法是 Wavelet-aided RL-based Run-by-run controller（WRL-RbR controller），这个方法首次结合基于小波域的多分辨率分析和强化学习，优势是(1)在大的动作空间中选择最优或近似最优动作的灵活性，(2)目标处理流程的期望值收敛更快。
+
+
+
+强化学习算法用于错误预测：错误的更新$E_t$
 
 
 # **参考文献**
