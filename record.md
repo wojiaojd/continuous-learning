@@ -33,7 +33,7 @@ hello world!
 * 面向被控对象的环境学习
 * 面向复杂不确定被控对象的学习
 
-## **2020.9.18-20**
+## **2020.9.18-21**
 ### **智能控制领域的常用算法**
 * 专家系统
 * 遗传算法
@@ -48,8 +48,10 @@ A Multiresolution Analysis-Assisted Reinforcement Learning Approach to Run-by-Ru
 Exponentially weighted moving average (EWMA) controller 在工业上广泛使用，但在多尺度干扰和缺乏精确处理模型的环境下，性能不佳。
 
 
-本文使用的方法是 Wavelet-aided RL-based Run-by-run controller（WRL-RbR controller），这个方法首次结合基于小波域的多分辨率分析和强化学习，优势是(1)在大的动作空间中选择最优或近似最优动作的灵活性，(2)目标处理流程的期望值收敛更快。
+本文使用的方法是 Wavelet-aided RL-based Run-by-run controller（WRL-RbR controller），这个方法首次结合基于小波域的多分辨率分析和强化学习，优势是(1)在大的动作空间中选择最优或近似最优动作的灵活性（可以使用空间分布传感器数据），(2)目标处理流程的期望值收敛更快（相对于过程建模）。
 
+
+这里多分辨率分析是指对含多频率噪声的数据进行降噪处理，帮助从噪声信号数据中提取重要特征。
 
 
 强化学习算法用于错误预测：错误的更新$E_t=f_t-\hat y_t$（其中$f_t$是重构的信号，即过程输出，$\hat y_t$是感兴趣的质量特征，即模型预测输出）用马尔可夫链建模，过程偏移量$a_t$的预测决策用马尔可夫决策过程（MDP）建模。为了解MDP，有必要离散化$E_t$和$a_t$，由于有大量($E_t$,$a_t$)元组，因此采用强化学习的方法来解马尔可夫决策模型。
