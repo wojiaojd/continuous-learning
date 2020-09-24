@@ -42,7 +42,7 @@ hello world!
 * 模糊逻辑和神经网络是两种万能逼近器，两者的结合，即模糊神经网络和神经模糊逻辑算法
 
 
-A Multiresolution Analysis-Assisted Reinforcement Learning Approach to Run-by-Run Control（一种多分辨率分析辅助强化学习的逐段控制方法）：<sup>[3]</sup> 
+**A Multiresolution Analysis-Assisted Reinforcement Learning Approach to Run-by-Run Control（一种多分辨率分析辅助强化学习的逐段控制方法）**：<sup>[3]</sup>  
 
 
 Exponentially weighted moving average (EWMA) controller 在工业上广泛使用，但在多尺度干扰和缺乏精确处理模型的环境下，性能不佳。
@@ -62,9 +62,25 @@ Exponentially weighted moving average (EWMA) controller 在工业上广泛使用
 * 强化学习是一种基于仿真的解决MDPs的方法，根于贝尔曼方程，使用随机逼近原理
 
 
+## **2020.9.22-24**
+**ON CONVERGENCE RATE OF ADAPTIVE MULTISCALE VALUE FUNCTION APPROXIMATION FOR REINFORCEMENT LEARNING（强化学习的自适应多尺度值函数逼近的收敛速度）**：<sup>[4]</sup>
+
+
+本文采用基于值的最优策略寻找最大期望的长期奖励，即通过研究Bellman方程所描述的最优值函数。
+
+
+通过自适应基的线性组合来逼近最优价值函数，从而产生多尺度逼近，本文设计了一个多尺度值函数逼近的通用框架，适用于分段常数函数、分段多项式以及小波分析中的其他尺度函数。本文补充了前人工作中收敛性分析和近似残差方面的结果的不足。GMSA(Generalized MultiScale Approximation)和ATC(Adaptive Tile Coding)都是基于树近似的，区别在于基的选择。
+
+
+这里的多分辨率分析是指，利用树近似，在平滑的函数区域使用低分辨率，在剧烈变化的函数区域使用高分辨率。
+
+
+
 # **参考文献**
 >[1] 甘晓琴.基于强化学习的仿人智能控制器参数在线学习与优化[D].重庆:重庆大学,2010.
 
 >[2] 王培进.仿人智能控制的在线学习模型[J].计算机工程与应用,2001,27(1):80-82. DOI:10.3321/j.issn:1002-8331.2001.01.027.
 
 >[3] R. Ganesan, T. K. Das and K. M. Ramachandran, "A Multiresolution Analysis-Assisted Reinforcement Learning Approach to Run-by-Run Control," in IEEE Transactions on Automation Science and Engineering, vol. 4, no. 2, pp. 182-193, April 2007.
+
+>[4] T. Li and Q. Zhu, "On Convergence Rate of Adaptive Multiscale Value Function Approximation for Reinforcement Learning," 2019 IEEE 29th International Workshop on Machine Learning for Signal Processing (MLSP), Pittsburgh, PA, USA, 2019, pp. 1-6.
