@@ -75,6 +75,14 @@ Exponentially weighted moving average (EWMA) controller 在工业上广泛使用
 这里的多分辨率分析是指，利用树近似，在平滑的函数区域使用低分辨率，在剧烈变化的函数区域使用高分辨率。
 
 
+## **2020.9.29**
+**Neurofuzzy Reinforcement Learning Control Schemes for Optimized Dynamical Performance**<sup>[5]</sup>
+
+
+模糊系统和神经网络方案：无模型的、存储知识做出决策。对于模糊系统，不准确的专家知识会导致功能退化；对于神经网络，当数据不能服务于特定领域时会有缺点。结合使用，综合知识、专家特征、学习能力。
+
+
+文中对比单一模糊控制、Q学习模糊控制、神经网络模糊控制，后两种策略在模糊控制的基础上增加了学习优化过程，都产生了优于单一模糊控制的结果，其中模糊神经网络效果最佳。
 
 # **参考文献**
 >[1] 甘晓琴.基于强化学习的仿人智能控制器参数在线学习与优化[D].重庆:重庆大学,2010.
@@ -84,3 +92,5 @@ Exponentially weighted moving average (EWMA) controller 在工业上广泛使用
 >[3] R. Ganesan, T. K. Das and K. M. Ramachandran, "A Multiresolution Analysis-Assisted Reinforcement Learning Approach to Run-by-Run Control," in IEEE Transactions on Automation Science and Engineering, vol. 4, no. 2, pp. 182-193, April 2007.
 
 >[4] T. Li and Q. Zhu, "On Convergence Rate of Adaptive Multiscale Value Function Approximation for Reinforcement Learning," 2019 IEEE 29th International Workshop on Machine Learning for Signal Processing (MLSP), Pittsburgh, PA, USA, 2019, pp. 1-6.
+
+>[5] M. Abouheaf and W. Gueaieb, "Neurofuzzy Reinforcement Learning Control Schemes for Optimized Dynamical Performance," 2019 IEEE International Symposium on Robotic and Sensors Environments (ROSE), Ottawa, ON, Canada, 2019, pp. 1-7.
