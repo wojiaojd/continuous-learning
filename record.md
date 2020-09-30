@@ -84,6 +84,20 @@ Exponentially weighted moving average (EWMA) controller 在工业上广泛使用
 
 文中对比单一模糊控制、Q学习模糊控制、神经网络模糊控制，后两种策略在模糊控制的基础上增加了学习优化过程，都产生了优于单一模糊控制的结果，其中模糊神经网络效果最佳。
 
+
+## **2020.9.30**
+**Multi-scale reinforcement learning with fuzzy state**<sup>[6]</sup>
+
+
+一般的强化学习在遇到状态空间较大的复杂问题时，学习速度会降低。在大状态空间下，分层方法是有效的。分层方法将任务分解为子任务的状态转移子序列来学习实现更容易的子目标。这表明改变时间尺度会影响学习效果。
+
+
+提出了模糊状态的概念，为空间多尺度表示提供了一种方法。实验表明，改变空间尺度同样可以影响学习性能。不同的空间学习尺度表现出不同的学习速度和学习精度，在此基础上提出了一种提高学习速度同时保持学习精度的多尺度学习方法。
+
+
+文中以复杂环境下的机器人导航作为仿真实验验证多尺度强化学习性能。
+
+
 # **参考文献**
 >[1] 甘晓琴.基于强化学习的仿人智能控制器参数在线学习与优化[D].重庆:重庆大学,2010.
 
@@ -94,3 +108,5 @@ Exponentially weighted moving average (EWMA) controller 在工业上广泛使用
 >[4] T. Li and Q. Zhu, "On Convergence Rate of Adaptive Multiscale Value Function Approximation for Reinforcement Learning," 2019 IEEE 29th International Workshop on Machine Learning for Signal Processing (MLSP), Pittsburgh, PA, USA, 2019, pp. 1-6.
 
 >[5] M. Abouheaf and W. Gueaieb, "Neurofuzzy Reinforcement Learning Control Schemes for Optimized Dynamical Performance," 2019 IEEE International Symposium on Robotic and Sensors Environments (ROSE), Ottawa, ON, Canada, 2019, pp. 1-7.
+
+>[6] Xiao-Dong Zhuang, Qing-Chun Meng, Han-Ping Wang and Bo Yin, "Multi-scale reinforcement learning with fuzzy state," Proceedings. International Conference on Machine Learning and Cybernetics, Beijing, China, 2002, pp. 1523-1528 vol.3.
